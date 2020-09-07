@@ -1,0 +1,19 @@
+{
+  "name": "error-boy",
+  "version": "1.0.0",
+  "description": "Node library to push errors into google chat room",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clanizon/error-boy.git"
+  },
+  "keywords": [],
+  "author": "aswathpandiyan",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
