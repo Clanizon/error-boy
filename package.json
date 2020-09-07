@@ -1,6 +1,6 @@
 {
   "name": "error-boy",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Node library to push errors into google chat room",
   "main": "index.js",
   "scripts": {
