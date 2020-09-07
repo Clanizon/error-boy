@@ -30,7 +30,9 @@ try {
 }
 ```
 
-rename `webhookURL` to your google chat webhook.
+rename `webhookURL` to your google chat webhook. [what is webhookURL](https://developers.google.com/hangouts/chat/how-tos/webhooks#define_an_incoming_webhook) 
 
-[what is webhookURL](https://developers.google.com/hangouts/chat/how-tos/webhooks#define_an_incoming_webhook) 
+License
+----
 
+MIT
