@@ -1,17 +1,36 @@
 # error-boy
 
-### working demo
+A node library to push production errors into Google Chat.
 
-const errorBoy = require("error-boy");<br/>
+### Installation
 
-errorBoy.init(
-  "https://chat.googleapis.com/v1/spaces/AAAAbM73Y-8/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=-------------------------------------%3D"
-);<br/>
+requires [Node.js](https://nodejs.org/) to run.
 
-try {<br/>
-  throw new Error("Invalid function");<br/>
-} catch (err) {<br/>
-  errorBoy.log(err.message);<br/>
-}<br/>
+Install the dependencies and devDependencies and start the server.
 
-### rename init parameter as your webhook url
+```sh
+$ cd project
+$ npm install error-boy --save
+```
+
+### Import Library
+
+index.js
+
+```
+const errorBoy = require("error-boy");
+const webhookURL = "https://chat.googleapis.com/v1/XXXXXXXXXXXXXXXXXXXXXXX";
+
+errorBoy.init(webhookURL);
+
+try {
+  throw new Error("Invalid function");
+} catch (err) {
+  errorBoy.log(err.message)
+}
+```
+
+rename `webhookURL` to your google chat webhook.
+
+[what is webhookURL](https://developers.google.com/hangouts/chat/how-tos/webhooks#define_an_incoming_webhook) 
+
